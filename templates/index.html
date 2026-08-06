@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Evaluation & Comparison</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container main-layout">
+        
+        <!-- Main Content Area for Dashboard -->
+        <main class="dashboard glass-panel">
+            <header class="dashboard-header">
+                <h2>Comparison Dashboard</h2>
+                <button id="refresh-btn" class="btn secondary">Refresh Results</button>
+            </header>
+
+            <div class="charts-row">
+                <div class="chart-container glass-card">
+                    <canvas id="mapChart"></canvas>
+                </div>
+                <div class="chart-container glass-card">
+                    <canvas id="f1Chart"></canvas>
+                </div>
+            </div>
+
+            <div class="results-grid" id="results-grid">
+                <!-- Result Cards will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <button class="lightbox-prev">&#10094;</button>
+            <div class="lightbox-image-container">
+                <img class="lightbox-content" id="lightbox-img">
+                <div id="lightbox-caption"></div>
+            </div>
+            <button class="lightbox-next">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
