@@ -1,4 +1,4 @@
-# YOLOv8 Model Karşılaştırma ve Analiz Dashboard'u
+# YOLOv11 Model Karşılaştırma ve Analiz Dashboard'u
 
 Bu proje, eğittiğiniz farklı YOLOv8 nesne tespiti (object detection) modellerinin doğrulama (validation) sonuçlarını kıyaslamak, detaylıca incelemek ve metriklerini görselleştirmek için geliştirilmiş kullanışlı bir web uygulamasıdır.
 
